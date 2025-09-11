@@ -66,7 +66,7 @@ switch(req.url.toLowerCase()){
       file = '';
   
 }
-const filePath= path.join(__dirname,'..', 'HTML', file);
+const filePath= path.join(__dirname,'..', file);
 fs.readFile(filePath, (err, content)=>{
     if(err){
         res.writeHead(500);
