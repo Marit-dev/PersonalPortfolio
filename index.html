@@ -13,12 +13,14 @@
 </head>
 <body >
 
-<nav class="navbar navbar-dark bg-dark">
+<nav class="navbar navbar-dark bg-dark navbar-expand-lg">
  <div class="container-fluid px-4">
-     <img class="ms-5 me-3 rounded" src="./Img/worker.png" alt="GitPortFolio" style="width: 30px; height: 30px; object-fit: cover;">
+     <img class="ms-5 me-3 rounded img-fluid" src="./Img/worker.png" alt="GitPortFolio" style="width: 30px; height: 30px; object-fit: cover;">
     <a class="navbar-brand" href="#">Mi Portafolio</a>
-
-  
+     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav d-flex flex-row ms-auto">
       <li class="nav-item mx-3">
         <a class="nav-link text-white" href="#about">Acerca de</a>
@@ -31,61 +33,49 @@
       </li>
      
     </ul>
+    </div>
  </div>
 </nav>
 
-<div id="about" class="container-fluid h-100 d-flex justify-content-center align-items-center mt-5 text-white">
 
-<div class="p-5 pb-0 mt-5" id="left">
 
-<div class=" d-flex align-items-start mt-3 pt-3">
-    <div class="text-start pt-5 ps-5">
-         <p class="text-primary fw-bold">About</p>
-        <h1 class="name text-start">Levigne Fresco</h1>
-        <p class="description">Desarrolladora en formación, entusiasta por crear soluciones innovadoras, dedicada al aprendizaje continuo y comprometida en aportar valor a cada proyecto.</p>
+<!-- ABOUT -->
+<section id="about" class="container-fluid text-white py-5 pt-0">
+   <div class="container">
+  <div class="row align-items-center justify-content-center">
+   
+    <!-- Texto -->
+    <div class="col-md-6 pe-2">
+      <p class="text-primary fw-bold">About</p>
+      <h1 class="name">Levigne Fresco</h1>
+      <p class="description">
+        Desarrolladora en formación, entusiasta por crear soluciones innovadoras, dedicada al aprendizaje continuo y comprometida en aportar valor a cada proyecto.
+      </p>
 
-      <div class="social-icons mt-5 ms-2">
-       <a href="https://mail.google.com/mail/?view=cm&fs=1&to=levidev02@gmail.com" class="me-5" title="Email">
-       <img src="./Img/Gmail.jpg" alt="gamil" style="width: 30px; height: 30px; object-fit: cover;">
-      </a>
-
-       <a href="https://wa.me/18294865170" class="me-5" target="_blank" title="Whatsapp">
-        <i class="fab fa-whatsapp fa-2x" style="color:#25D366; vertical-align: middle;"></i>
-      </a>
-
-      <a href="https://github.com/Marit-dev" class="me-5" target="_blank" title="GitHub">
-       <img src="./Img/GitHub.png" alt="gamil" style="width: 30px; height: 30px; object-fit: cover;">
-      </a>
+      <div class="social-icons mt-5 d-flex flex-wrap">
+        <a href="mailto:levidev02@gmail.com" class="me-5 mb-3" title="Email">
+          <img src="./Img/Gmail.jpg" alt="gmail" style="width:30px; height:30px; object-fit:cover;" class="img-fluid">
+        </a>
+        <a href="https://wa.me/18294865170" class="me-5 mb-3" target="_blank" title="Whatsapp">
+          <i class="fab fa-whatsapp fa-2x" style="color:#25D366;"></i>
+        </a>
+        <a href="https://github.com/Marit-dev" class="me-5 mb-3" target="_blank" title="GitHub">
+          <img src="./Img/GitHub.png" alt="github" style="width:30px; height:30px; object-fit:cover;" class="img-fluid">
+        </a>
+      </div>
     </div>
 
-
-    </div>
-</div>
-
-<!-- <div class="p-3 ms-3 mt-5">
-    <div class="mb-5 mt-5">
-    <h2>...Mas sobre mi</h2>
-    </div>
-    <div>
-   <button type="button" id="btnValores" class="btn btn-outline-dark me-5">Valores</button>
-   <button type="button" id="btnSkills" class="btn btn-outline-dark  me-5">Skills</button>
-   <button type="button" id="btnProyectos" class="btn btn-outline-dark  me-5">Proyectos</button>
-   <button type="button" id="btnContacto" class="btn btn-outline-dark  me-5">Contacto</button>
-</div>
-</div>-->
-
+    <!-- Foto -->
+    <div class="col-md-6 text-center">
+      <img src="/Img/yo.jpg" alt="Foto mía" style="width: 300px; height: 300px; object-fit:cover;" class="rounded-circle img-fluid">
     </div>
 
- <div class="p-5 pb-0 mt4" id="right">
+  </div>
+   </div>
+</section>
 
-<div class="mb-4 pt-4 d-flex justify-content-center align-items-center">  
-    <img src="/Img/yo.jpg" alt="Fotomia" style="width: 350px; height: 350px; object-fit: cover;" class="rounded-circle">
-</div>
 
-</div>
-</div>
-
-<div id="skills" class="container mb-5 p-5 pt-0 text-white">
+<section id="skills" class="container mb-5 p-5 pt-0 text-white">
   <div class="text-start mb-5">
     <p class="text-primary fw-bold">My skills</p>
     <h1 class="fw-bold">Tecnologias que manejo</h1>
@@ -107,11 +97,11 @@
     <div class="col-md-5 mb-4"><p class="fw-bold">GitHub</p></div>
    
   </div>
-</div>
+</section>
 
 
 <!--SECCIÓN DE PROYECTOS -->
-<div id="proyectos" class="container-fluid py-5 text-white">
+<section id="proyectos" class="container-fluid py-5 text-white">
   <div class="container pt-4">
     <!-- Header de la sección -->
     <div class="section-header text-start">
@@ -125,12 +115,12 @@
     <!-- Grid de proyectos -->
     <div class="row g-4">
       <!-- Proyecto 1 -->
-      <div class="col-lg-4 col-md-6">
+      <div class="col-lg-4 col-md-6 col-sm-12">
         <div class="project-card p-4">
           <div class="project-image rounded">
-           <img src="/Img/DeliverApp.jpg" alt="DeliverApp">
+           <img src="/Img/DeliverApp.jpg" alt="DeliverApp" class="img-fluid">
           </div>
-          <div class="d-flex justify-content-center align-items-center">
+          <div class="d-flex justify-content-between align-items-center mt-2">
           <h3 class="project-title" style="margin-right: 180px;">DeliverApp</h3>
           <a href="https://github.com/alexbernal28/AppCenar/tree/dev" class="ms-5 text-white" title="Ver en GitHub" >
             <i class="devicon-github-original-wordmark" style="font-size: 30px;"></i>
@@ -166,12 +156,12 @@
 
       <!-- Proyecto 2 -->
 
-<div class="col-lg-4 col-md-6">
+<div class="col-lg-4 col-md-6 col-sm-12">
         <div class="project-card p-4">
           <div class="project-image rounded">
-            <img src="/Img/BookApp.jpg" alt="BookApp">
+            <img src="/Img/BookApp.jpg" alt="BookApp" class="img-fluid">
           </div>
-           <div class="d-flex justify-content-center align-items-center mt-2">
+           <div class="d-flex justify-content-between align-items-center mt-2">
           <h3 class="project-title" style="margin-right: 200px;">BookApp</h3>
           <a href="https://github.com/Marit-dev/BookApp" class="ms-5 text-white" title="Ver en GitHub" >
             <i class="devicon-github-original-wordmark" style="font-size: 30px;"></i>
@@ -205,12 +195,12 @@
      
 
       <!-- Proyecto 3 -->
-      <div class="col-lg-4 col-md-6">
+      <div class="col-lg-4 col-md-6 col-sm-12">
         <div class="project-card p-4">
           <div class="project-image rounded">
-            <img src="/Img/ReservaCitas.jpg" alt="ReservaCitas">
+            <img src="/Img/ReservaCitas.jpg" alt="ReservaCitas" class="img-fluid">
           </div>
-        <div class="d-flex justify-content-center align-items-center mt-2">
+        <div class="d-flex justify-content-between align-items-center mt-2">
           <h3 class="project-title" style="margin-right: 180px;">ReservaCitas</h3>
           <a href="https://github.com/Marit-dev/ReservaCitas" class="ms-5 text-white" title="Ver en GitHub">
             <i class="devicon-github-original-wordmark" style="font-size: 30px;"></i>
@@ -241,12 +231,12 @@
       </div>
 
       <!-- Proyecto 4 -->
-       <div class="col-lg-4 col-md-6">
+       <div class="col-lg-4 col-md-6 col-sm-12">
         <div class="project-card p-4">
           <div class="project-image rounded">
-            <img src="/Img/Pokedex.jpg" alt="DeliverApp">
+            <img src="/Img/Pokedex.jpg" alt="DeliverApp" class="img-fluid">
           </div>
-            <div class="d-flex justify-content-center align-items-center">
+            <div class="d-flex justify-content-between align-items-center mt-2">
           <h3 class="project-title" style="margin-right: 220px;">Pokedex</h3>
           <a href="https://github.com/Marit-dev/Pokedexx" class="ms-5 text-white" title="Ver en GitHub" >
             <i class="devicon-github-original-wordmark" style="font-size: 30px;"></i>
@@ -279,14 +269,14 @@
         </div>
       </div>
       <!-- Proyecto 5 -->
-    <div class="col-lg-4 col-md-6">
+    <div class="col-lg-4 col-md-6 col-sm-12">
         <div class="project-card p-4">
           <div class="project-image rounded">
-            <img src="/Img/SistemaInscripcion.jpg" alt="SistemaInscripcion">
+            <img src="/Img/SistemaInscripcion.jpg" alt="SistemaInscripcion" class="img-fluid">
           </div>
-          <div class="d-flex justify-content-center align-items-center mt-2">
-            <h3 class="project-title" style="margin-right: 120px;">Sistema Inscripción</h3>
-            <a href="https://github.com/Marit-dev/SistemaInscripcion" class="ms-5 text-white" title="Ver en GitHub">
+          <div class="d-flex justify-content-between align-items-center mt-2">
+            <h3 class="project-title" style="margin-right: 50px;">Sistema Inscripción</h3>
+            <a href="https://github.com/Marit-dev/SistemaInscripcion" class="text-white" title="Ver en GitHub">
               <i class="devicon-github-original-wordmark" style="font-size: 30px;"></i>
             </a>
           </div>
@@ -311,12 +301,12 @@
       </div>
 
       <!-- Proyecto 6 -->
-      <div class="col-lg-4 col-md-6">
+      <div class="col-lg-4 col-md-6 col-sm-12">
         <div class="project-card p-4">
           <div class="project-image rounded" style="background: linear-gradient(45deg, #007bff, #6610f2);">
-            <img src="/Img/Portafolio.jpg" alt="Portafolio" style="height: 250px; width: 370px; object-fit: cover;">
+            <img src="/Img/Portafolio.jpg" alt="Portafolio" style="height: 250px; width: 370px; object-fit: cover;" class="img-fluid">
           </div>
-          <div class="d-flex justify-content-center align-items-center mt-2">
+          <div class="d-flex justify-content-between align-items-center mt-2">
             <h3 class="project-title" style="margin-right: 200px;">Portafolio</h3>
             <a href="" class="ms-5 text-white">
               <i class="devicon-github-original-wordmark" style="font-size: 30px;"></i>
@@ -344,7 +334,7 @@
             </a>
           </div>
         </div>
-      </div>
+      </section>
           
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
